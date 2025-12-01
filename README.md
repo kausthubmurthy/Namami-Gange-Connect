@@ -1,6 +1,6 @@
-# Chacha Chaudhary – Namami Gange AI Chatbot (Node/Express + React)
+# Namami Gange Connect
 
-An offline-friendly AI chatbot that answers questions about the Namami Gange programme and River Ganga using:
+An offline-friendly AI chatbot that educates people by answering questions about the Namami Gange Programme and River Ganga:
 - NLP: NLTK + spaCy
 - Retrieval: scikit-learn TF–IDF
 - Re-ranking: PyTorch (with graceful fallback)
