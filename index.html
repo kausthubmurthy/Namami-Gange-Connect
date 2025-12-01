@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chacha Chaudhary - Namami Gange AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-title">
+                    <div class="chacha-avatar">🧓</div>
+                    <div>
+                        <h1>Chacha Chaudhary</h1>
+                        <p class="subtitle">Namami Gange AI Assistant</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Backend Status -->
+        <div id="backend-status" class="status-card">
+            <span class="status-indicator"></span>
+            <span class="status-text">Checking backend connection...</span>
+        </div>
+
+        <!-- Chat Container -->
+        <div class="chat-container">
+            <div id="chatMessages" class="chat-messages">
+                <!-- Welcome message -->
+                <div class="message bot-message">
+                    <div class="message-avatar">🧓</div>
+                    <div class="message-content">
+                        <div class="message-text">
+                            <span class="warning-icon">⚠️</span> Namaste! Main Chacha Chaudhary hun! Welcome to Namami Gange AI Assistant. I'm here to help you learn about river conservation, AI technology, and how we can protect our sacred River Ganga together. Feel free to ask me anything or use the quick buttons below! 🌊
+                        </div>
+                        <div class="message-time">09:16 am</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="typingIndicator" class="typing-indicator hidden">
+                <div class="typing-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <span>Chacha is thinking...</span>
+            </div>
+            
+            <!-- Quick Action Buttons -->
+            <div class="quick-actions">
+                <button class="quick-btn" data-topic="about_namami_gange">About Namami Gange</button>
+                <button class="quick-btn" data-topic="ai_technology">AI Technology</button>
+                <button class="quick-btn" data-topic="how_to_help">How to Help</button>
+                <button class="quick-btn" data-topic="ganga_importance">Ganga Importance</button>
+            </div>
+            
+            <!-- Chat Input -->
+            <div class="chat-input-container">
+                <input type="text" id="chatInput" placeholder="Ask Chacha Chaudhary anything about river conservation..." maxlength="500">
+                <button id="sendButton" class="send-button">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22,2 15,22 11,13 2,9"></polygon>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="about-section">
+                <div class="about-header">
+                    <div class="about-icon">🏛️</div>
+                    <h2>About Namami Gange</h2>
+                </div>
+                <p>A flagship program launched in 2014 with a budget of ₹20,000+ crore to clean and rejuvenate the sacred River Ganga.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">States Covered</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">344</div>
+                        <div class="stat-label">Projects Sanctioned</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">147</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                </div>
+                
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="about">About</button>
+                    <button class="tab-btn" data-tab="tips">Tips</button>
+                    <button class="tab-btn" data-tab="facts">Facts</button>
+                    <button class="tab-btn" data-tab="ai-tech">AI Tech</button>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <script src="app.js"></script>
+    
+    <script>
+        async function checkBackendHealth() {
+            const statusElement = document.getElementById('backend-status');
+            const indicator = statusElement.querySelector('.status-indicator');
+            const text = statusElement.querySelector('.status-text');
+            
+            try {
+                const response = await fetch('http://localhost:8000/health');
+                if (response.ok) {
+                    const data = await response.json();
+                    indicator.className = 'status-indicator connected';
+                    text.textContent = `AI backend connected (${data.docs || 0} docs loaded)`;
+                } else {
+                    throw new Error('Backend not responding');
+                }
+            } catch (error) {
+                indicator.className = 'status-indicator disconnected';
+                text.textContent = 'AI backend offline - using local responses';
+            }
+        }
+        
+        checkBackendHealth();
+        setInterval(checkBackendHealth, 30000);
+    </script>
+</body>
+</html>
