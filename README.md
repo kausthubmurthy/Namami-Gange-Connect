@@ -1,5 +1,5 @@
-# Namami Gange Connect
-### 🌊 Protecting the Ganga through Technology, Culture & Conversation
+### Namami Gange Connect
+#### 🌊 Protecting the Ganga through Technology, Culture & Conversation
 
 This project introduces **Chacha Chaudhary**, the beloved Indian comic character, as an  
 **AI-powered interactive robot mascot** to enhance public awareness, especially youth engagement,  
@@ -7,16 +7,16 @@ for the **Namami Gange Programme** — India’s flagship river conservation ini
 
 ---
 
-## ✨ Key Features
-- 🧠 **Conversational AI** using NLP & Dialogue Management
-- 🌐 **Multilingual Support** (Hindi, English, Bengali & more)
-- 📚 **Environmental education** using real-time data & storytelling
-- 🎨 **Animated Digital Avatar** modeled after Chacha Chaudhary
-- ☁️ **Hybrid Cloud + Edge Deployment** for scalability
+#### ✨ Key Features
+-  **Conversational AI** using NLP & Dialogue Management
+-  **Multilingual Support** (Hindi, English, Bengali & more)
+-  **Environmental education** using real-time data & storytelling
+-  **Animated Digital Avatar** modeled after Chacha Chaudhary
+-  **Hybrid Cloud + Edge Deployment** for scalability
 
 ---
 
-## 🏗️ System Architecture
+#### 🏗️ System Architecture
 
 The system follows a **modular pipeline**:
 
@@ -27,7 +27,7 @@ The system follows a **modular pipeline**:
 
 ---
 
-## 🧩 Core Modules
+#### 🧩 Core Modules
 
 | Module | Description |
 |--------|-------------|
@@ -39,7 +39,7 @@ The system follows a **modular pipeline**:
 
 ---
 
-## 📊 Evaluation & Results
+#### 📊 Evaluation & Results
 Chacha Chaudhary Robot has been tested in public spaces like **Ganga Museums** with:
 
 | Performance Metric | Result |
@@ -54,7 +54,7 @@ These results show **high engagement & educational impact** among children and c
 
 ---
 
-## 🌍 Social Impact Goals
+#### 🌍 Social Impact Goals
 
 ✔ Raise awareness about Ganga conservation  
 ✔ Encourage behavioral change through fun interaction  
@@ -64,7 +64,7 @@ These results show **high engagement & educational impact** among children and c
 
 ---
 
-## 🛠️ Tech Stack
+#### 🛠️ Tech Stack
 
 | Category | Tools |
 |---------|------|
@@ -76,7 +76,7 @@ These results show **high engagement & educational impact** among children and c
 
 ---
 
-## 🧩 Core Modules
+#### 🧩 Core Modules
 The AI-powered Chacha Chaudhary mascot system consists of the following key modules:
  - User Interaction Module — Handles voice, text, and gesture-based inputs for engaging communication. 
  - Speech & Text Processing — Integrates ASR, TTS, and multilingual support for seamless communication. 
@@ -85,29 +85,29 @@ The AI-powered Chacha Chaudhary mascot system consists of the following key modu
  - Knowledge Repository — Stores comics, environmental facts, media assets, and real-time river data. 
  - Cloud Infrastructure & Analytics — Ensures scalable deployment with AWS-based data processing.
 
-## 📦 Installation
-# Installation Guide
+#### 📦 Installation
+#### Installation Guide
 
-## Step 1: Clone the repository
+#### Step 1: Clone the repository
 ```
 git clone https://github.com/your-repo/namami-gange-mascot.git
 cd namami-gange-mascot
 ```
 
-## Step 2: Create and activate virtual environment
+#### Step 2: Create and activate virtual environment
 ```
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-## Step 3: Install dependencies
+#### Step 3: Install dependencies
 ```pip install -r requirements.txt```
 
-## Step 4: Configure environment variables
+#### Step 4: Configure environment variables
 - Add API keys for ASR, TTS, and cloud services
 - Configure database credentials for PostgreSQL
 
-## Step 5: Run the application
+#### Step 5: Run the application
 Run main.py
 
 
