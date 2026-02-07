@@ -11,8 +11,7 @@ for the **Namami Gange Programme** — India’s flagship river conservation ini
 -  **Conversational AI** using NLP & Dialogue Management
 -  **Multilingual Support** (Hindi, English, Bengali & more)
 -  **Environmental education** using real-time data & storytelling
--  **Animated Digital Avatar** modeled after Chacha Chaudhary
--  **Hybrid Cloud + Edge Deployment** for scalability
+
 
 ---
 
@@ -51,16 +50,6 @@ Chacha Chaudhary Robot has been tested in public spaces like **Ganga Museums** w
 
 
 These results show **high engagement & educational impact** among children and communities.
-
----
-
-#### 🌍 Social Impact Goals
-
-✔ Raise awareness about Ganga conservation  
-✔ Encourage behavioral change through fun interaction  
-✔ Reduce digital divide with multilingual support  
-✔ Empower students with accessible eco-education  
-
 
 ---
 
