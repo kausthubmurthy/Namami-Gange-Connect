@@ -1,9 +1,4 @@
-### Namami Gange Connect
-#### 🌊 Protecting the Ganga through Technology, Culture & Conversation
-
-This project introduces **Chacha Chaudhary**, the beloved Indian comic character, as an  
-**AI-powered interactive robot mascot** to enhance public awareness, especially youth engagement,  
-for the **Namami Gange Programme** — India’s flagship river conservation initiative. 
+### Career Sphere
 
 ---
 
